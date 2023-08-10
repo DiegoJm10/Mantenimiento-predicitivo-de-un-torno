@@ -30,7 +30,7 @@ En este proyecto se busca solucionar que se pueda prevenir alguna falla del moto
       - Empezamos abriendo Arduino IDE
       - Abrimos la pestaña de Archivo
       - Seleccionamos Preferencias.
-      - En la parte de Gestor de URLs Adicionales de Trajetas colocamos lo siguente: 
+      - En la parte de Gestor de URLs Adicionales de Tarjetas colocamos lo siguiente: 
       ```
       https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_dev_index.json
       ```
@@ -39,11 +39,11 @@ En este proyecto se busca solucionar que se pueda prevenir alguna falla del moto
       - Buscamos esp32 y seleccionamos lo que muestra en la imagen
       ![](https://github.com/DiegoJm10/Mantenimiento-predicitivo-de-un-torno/blob/main/Pruebas_SENSOR_DE_TEMOPAR%20Arduino%201.8.19%2010_08_2023%2010_49_33%20a.%20m..png?raw=true)
 
- 2. Se seleccionó la tarejeta adecuada la cual se llama **ESP32 Dev Module**.
+ 2. Se seleccionó la tarjeta adecuada la cual se llama **ESP32 Dev Module**.
 
- 3. Se realizaron los codigos por separado para poder obtener un mejor resultado.
+ 3. Se realizaron los códigos por separado para poder obtener un mejor resultado.
 
- 4. Empezamos haciendo el codigo del termopar tipo K.
+ 4. Empezamos haciendo el código del termopar tipo K.
 
 ```
 //Realizado por Diego Jasso Miranda
@@ -242,3 +242,107 @@ double Irms = emon1.calcIrms(1480);
   }
 }
 ```
+7. Mostramos la conexión de Node-red.
+
+![](https://github.com/DiegoJm10/Mantenimiento-predicitivo-de-un-torno/blob/main/Node-RED%20-%20Google%20Chrome%2010_08_2023%2011_26_30%20a.%20m..png?raw=true)
+
+![](https://github.com/DiegoJm10/Mantenimiento-predicitivo-de-un-torno/blob/main/Dashboard.png?raw=true)
+
+![](https://github.com/DiegoJm10/Mantenimiento-predicitivo-de-un-torno/blob/main/Filtrer.png?raw=true)
+
+![](https://github.com/DiegoJm10/Mantenimiento-predicitivo-de-un-torno/blob/main/UI%20CONTROL.png?raw=true)
+
+8. En la siguiente lista se mostrara los códigos de cada fuction:
+   - Fuction 1: 
+    ```
+    msg.topic = "SELECT * FROM tamulba7 ORDER BY FECHA DESC";
+    msg.leer = true;
+    return msg;
+    ```
+   - Fuction 2:
+   ```
+   var query = "INSERT INTO `tamulba7`(`ID`, `FECHA`, `DEVICE`, `TEMPERATURA`, `AMPERAJE`) VALUES (NULL, current_timestamp(), '";
+   query = query+msg.payload.DEVICE + "','";
+   query = query+msg.payload.TEMPERATURA + "','";
+   query = query+msg.payload.AMPERAJE + "');'";
+   msg.topic=query;
+   return msg;
+   ```
+
+   - Fuction 3:
+
+   ```
+   msg.topic = "SELECT AMPERAJE FROM tamulba7 ORDER by ID DESC LIMIT 1;"; 
+   msg.leer = true;
+   return msg;
+   ```
+
+   - Fuction 4:
+
+   ```
+   msg.payload = msg.payload.AMPERAJE;
+   msg.topic = "AMPERAJE";
+   return msg;  
+   ```
+
+   - Fuction 5:
+
+   ```
+   msg.payload = msg.payload.TEMPERATURA;
+   msg.topic = "TEMPERATURA";
+   return msg;
+   ```
+
+   - Fuction 6:
+   
+   ```
+   msg.topic = "TRUNCATE TABLE tamulba7"
+   return msg;
+   ```
+ 
+   - Fuction 8:
+
+   ```
+   msg.topic = "SELECT * FROM tamulba7 ORDER BY FECHA DESC";
+   msg.leer = true;
+   return msg;
+   ```
+
+   - Fuction clearData:
+
+   ```
+   msg.payload = {
+    "command" : "clearData",
+    arguments: []
+    }
+    
+    flow.set("id", 0)
+    return msg;
+   ```
+
+   - Fuction deleteRow:
+
+   ```
+   const row = flow.get("selectedRow")
+   
+   msg.payload = {
+    command : "deleteRow",
+    arguments : [row.id]
+    }
+    return msg;
+   ```
+
+   - Fuction Construct Filter:
+
+   ```
+   const filter = flow.get("filter");
+   
+   msg.payload = {
+    command: "setFilter",
+    arguments: [
+        filter.field,
+        filter.type,
+        filter.value
+        }
+        return msg;
+   ```
