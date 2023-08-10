@@ -346,3 +346,30 @@ double Irms = emon1.calcIrms(1480);
         }
         return msg;
    ```
+
+9. Los datos obtenidos se mandaron a una base de datos de mysql en la plataforma **phpmyadmin** como se muestra en la siguiente imagen.
+
+![](https://github.com/DiegoJm10/Mantenimiento-predicitivo-de-un-torno/blob/main/localhost%20_%20127.0.0.1%20_%20tamulbatm7%20_%20tamulba7%20_%20phpMyAdmin%205.2.1%20-%20Google%20Chrome%2010_08_2023%2012_54_37%20p.%20m..png?raw=true)
+
+## Resultados
+
+## Evidencia
+- [Youtube]()
+
+- [Codigos de arduino]()
+
+## Créditos
+
+### Desarrollado por
+ 
+- Diego Jasso Miranda
+  - [GitHub](https://github.com/DiegoJm10)
+  - [Facebook](https://www.facebook.com/jasso.diego.5/)
+- Omar Mora Gomez
+  - [GitHub](https://github.com/OmarMoraGomez)
+  - [Facebook]()
+- Yuriko Lugo Velazquez
+  - [GitHub](https://github.com/Yurikolugo)
+  - [Facebook]()
+
+De igual manera un agradecimiento a nuestros profesores **Hugo Vargas** y **Diego Trujillo**.
