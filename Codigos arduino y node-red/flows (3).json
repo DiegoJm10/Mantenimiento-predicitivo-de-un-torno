@@ -1,0 +1,2431 @@
+[
+    {
+        "id": "33cde48cba9c6d03",
+        "type": "tab",
+        "label": "Dashboard",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "dd75ff5aa356df2b",
+        "type": "tab",
+        "label": "Filter",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "3b0dc19f6d83de1d",
+        "type": "tab",
+        "label": "UI Control",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "8656b58157105c21",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "8cd6043d0485ab49",
+        "type": "group",
+        "z": "33cde48cba9c6d03",
+        "name": "Add Row",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "0d9cd6e6bdadb27d"
+        ],
+        "x": 34,
+        "y": 139,
+        "w": 172,
+        "h": 82
+    },
+    {
+        "id": "c2eb93b3d56a8b8e",
+        "type": "mqtt-broker",
+        "name": "HiveMQ",
+        "broker": "52.28.62.138",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "8fc09d0bef924bdf",
+        "type": "ui_tab",
+        "name": "Tornos Tamulba",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "8c832eb8146fdadb",
+        "type": "ui_group",
+        "name": "Grafica temp",
+        "tab": "29250e57d8a705d1",
+        "order": 2,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "294a76c94c56d12f",
+        "type": "ui_group",
+        "name": "Graficas amperaje",
+        "tab": "29250e57d8a705d1",
+        "order": 4,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f4e612767145dbcb",
+        "type": "ui_group",
+        "name": "Medidor de Amperaje",
+        "tab": "29250e57d8a705d1",
+        "order": 3,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "88b72f9784801b5f",
+        "type": "ui_group",
+        "name": "Medidor de Temp",
+        "tab": "29250e57d8a705d1",
+        "order": 1,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5bd58f075bf0f764",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#091077",
+                "baseFont": "Impact,Impact,Charcoal,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#091077",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0e1abe",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#091077",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "Impact,Impact,Charcoal,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "TamulbaFCQeI",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "854a673279d8a4a7",
+        "type": "MySQLdatabase",
+        "name": "",
+        "host": "127.0.0.1",
+        "port": "3306",
+        "db": "tamulbatm7",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "fd68cd16c4de0586",
+        "type": "ui_group",
+        "name": "Group 2",
+        "tab": "5ff05dd1876c502d",
+        "order": 3,
+        "disp": false,
+        "width": "16",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "cbf80d8130cb671f",
+        "type": "ui_group",
+        "name": "Datos",
+        "tab": "8fc09d0bef924bdf",
+        "order": 1,
+        "disp": false,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "76a4f5fc1fb1a30a",
+        "type": "ui_group",
+        "name": "Graficas",
+        "tab": "8fc09d0bef924bdf",
+        "order": 2,
+        "disp": false,
+        "width": "10",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5ff05dd1876c502d",
+        "type": "ui_tab",
+        "name": "Tablas",
+        "icon": "dashboard",
+        "order": 5,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "2a23d1f375db2f69",
+        "type": "ui_tab",
+        "name": "Dashboard",
+        "icon": "dashboard",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "457443a7ef00c356",
+        "type": "ui_group",
+        "name": "Table",
+        "tab": "2a23d1f375db2f69",
+        "order": 1,
+        "disp": true,
+        "width": 8,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "591bf29180ec05c6",
+        "type": "ui_group",
+        "name": "Command",
+        "tab": "2a23d1f375db2f69",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "6ea85db8283d411b",
+        "type": "ui_group",
+        "name": "Data",
+        "tab": "2a23d1f375db2f69",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "54b2305af4b37298",
+        "type": "ui_group",
+        "name": "Row",
+        "tab": "2a23d1f375db2f69",
+        "order": 4,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d61766583efd1c8e",
+        "type": "ui_group",
+        "name": "Filter",
+        "tab": "2a23d1f375db2f69",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b8416f04e9a81064",
+        "type": "ui_tab",
+        "name": "Tab 4",
+        "icon": "dashboard",
+        "order": 2
+    },
+    {
+        "id": "bebf716488fee88e",
+        "type": "ui_group",
+        "name": "Graficas diplo",
+        "tab": "b8416f04e9a81064",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "bbadb028019b5c2d",
+        "type": "ui_group",
+        "name": "DATOS",
+        "tab": "b8416f04e9a81064",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ee3374a4442f54e3",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "3.82.39.163",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "7293ccade0bd7bd4",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "44.195.202.69",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "e3a3d5cf70434517",
+        "type": "ui_tab",
+        "name": "DIPLOMADO",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "a3163b74a5f93275",
+        "type": "ui_group",
+        "name": "GRAFICOS",
+        "tab": "e3a3d5cf70434517",
+        "order": 1,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "bf507ef556fcf672",
+        "type": "ui_group",
+        "name": "INDICADORES",
+        "tab": "e3a3d5cf70434517",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d5ccdb4e66c0235c",
+        "type": "ui_tab",
+        "name": "Tab 6",
+        "icon": "dashboard",
+        "order": 6
+    },
+    {
+        "id": "fe04b944ac358b27",
+        "type": "ui_group",
+        "name": "Boton",
+        "tab": "d5ccdb4e66c0235c",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "e4f97e6087047f68",
+        "type": "MySQLdatabase",
+        "name": "",
+        "host": "127.0.0.1",
+        "port": "3306",
+        "db": "diplomado1",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "a2d7e792b07cdae1",
+        "type": "mqtt-broker",
+        "name": "HiveMQ",
+        "broker": "52.57.47.134",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "7e7de87297a73e44",
+        "type": "ui_group",
+        "name": "Grafica temp",
+        "tab": "d48e328eda686769",
+        "order": 2,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "3ecc31622f9030f6",
+        "type": "ui_group",
+        "name": "Graficas amperaje",
+        "tab": "d48e328eda686769",
+        "order": 4,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "faec636a866b13d0",
+        "type": "ui_group",
+        "name": "Medidor de Amperaje",
+        "tab": "d48e328eda686769",
+        "order": 3,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "9423c9b718dc5398",
+        "type": "ui_group",
+        "name": "Medidor de Temp",
+        "tab": "d48e328eda686769",
+        "order": 1,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d48e328eda686769",
+        "type": "ui_tab",
+        "name": "Tornos Tamulba",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "a9d32c15aa000fc2",
+        "type": "telegram bot",
+        "botname": "Control_Torno_bot",
+        "usernames": "",
+        "chatids": "5460520497",
+        "baseapiurl": "",
+        "updatemode": "polling",
+        "pollinterval": "300",
+        "usesocks": false,
+        "sockshost": "",
+        "socksprotocol": "socks5",
+        "socksport": "6667",
+        "socksusername": "anonymous",
+        "sockspassword": "",
+        "bothost": "",
+        "botpath": "",
+        "localbotport": "8443",
+        "publicbotport": "8443",
+        "privatekey": "",
+        "certificate": "",
+        "useselfsignedcertificate": false,
+        "sslterminated": false,
+        "verboselogging": false
+    },
+    {
+        "id": "f8076140c474d403",
+        "type": "telegrambot-config",
+        "botname": "Control_Torno_bot",
+        "usernames": "",
+        "chatIds": "5460520497",
+        "pollInterval": "300"
+    },
+    {
+        "id": "e36f9b95eac93194",
+        "type": "ui_spacer",
+        "z": "8656b58157105c21",
+        "name": "spacer",
+        "group": "fd68cd16c4de0586",
+        "order": 2,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "a698f0948db6c1fb",
+        "type": "ui_spacer",
+        "z": "8656b58157105c21",
+        "name": "spacer",
+        "group": "fd68cd16c4de0586",
+        "order": 4,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "aaf9fa7061fdf79d",
+        "type": "ui_spacer",
+        "z": "8656b58157105c21",
+        "name": "spacer",
+        "group": "cbf80d8130cb671f",
+        "order": 2,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "8814bcee8966f621",
+        "type": "telegrambot-config",
+        "botname": "Control_Torno_bot",
+        "usernames": "",
+        "chatIds": "5460520497",
+        "pollInterval": "300"
+    },
+    {
+        "id": "82a86f9ed942f2b5",
+        "type": "telegram bot",
+        "botname": "Control_Torno_bot",
+        "usernames": "",
+        "chatids": "5460520497",
+        "baseapiurl": "",
+        "updatemode": "polling",
+        "pollinterval": "300",
+        "usesocks": false,
+        "sockshost": "",
+        "socksprotocol": "socks5",
+        "socksport": "6667",
+        "socksusername": "anonymous",
+        "sockspassword": "",
+        "bothost": "",
+        "botpath": "",
+        "localbotport": "8443",
+        "publicbotport": "8443",
+        "privatekey": "",
+        "certificate": "",
+        "useselfsignedcertificate": false,
+        "sslterminated": false,
+        "verboselogging": false
+    },
+    {
+        "id": "fe58fbdef0afc32d",
+        "type": "ui_table",
+        "z": "33cde48cba9c6d03",
+        "group": "457443a7ef00c356",
+        "name": "",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "columns": [
+            {
+                "field": "ID",
+                "title": "Customer ID",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "FECHA",
+                "title": "Fecha",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "DEVICE",
+                "title": "Device",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "TEMPERATURA",
+                "title": "Temperatura",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "AMPERAJE",
+                "title": "Amperaje",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 1,
+        "cts": true,
+        "x": 970,
+        "y": 240,
+        "wires": [
+            [
+                "e47a020c403945cf",
+                "371ab3ca6127fd3a",
+                "fb22fad2ae3e49f3"
+            ]
+        ]
+    },
+    {
+        "id": "e47a020c403945cf",
+        "type": "debug",
+        "z": "33cde48cba9c6d03",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1180,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "371ab3ca6127fd3a",
+        "type": "change",
+        "z": "33cde48cba9c6d03",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "selectedRow",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1210,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fb22fad2ae3e49f3",
+        "type": "change",
+        "z": "33cde48cba9c6d03",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"show\":[\"Dashboard_Row\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1190,
+        "y": 280,
+        "wires": [
+            [
+                "25380da5ba05b435"
+            ]
+        ]
+    },
+    {
+        "id": "25380da5ba05b435",
+        "type": "link out",
+        "z": "33cde48cba9c6d03",
+        "name": "",
+        "mode": "link",
+        "links": [
+            "146621db7f77c288",
+            "8f742595fa269988"
+        ],
+        "x": 1355,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "575de9f61eeef92d",
+        "type": "ui_button",
+        "z": "33cde48cba9c6d03",
+        "name": "",
+        "group": "591bf29180ec05c6",
+        "order": 3,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "label": "Clear Table",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "red",
+        "className": "",
+        "icon": "fa-trash",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 310,
+        "y": 240,
+        "wires": [
+            [
+                "7cf3e0d2a479b35e"
+            ]
+        ]
+    },
+    {
+        "id": "7cf3e0d2a479b35e",
+        "type": "function",
+        "z": "33cde48cba9c6d03",
+        "name": "clearData",
+        "func": "msg.payload = {\n    \"command\" : \"clearData\",\n    arguments: []\n}\n\nflow.set(\"id\", 0)\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 240,
+        "wires": [
+            [
+                "fe58fbdef0afc32d"
+            ]
+        ]
+    },
+    {
+        "id": "be4d117ddb4a50b9",
+        "type": "ui_button",
+        "z": "33cde48cba9c6d03",
+        "name": "",
+        "group": "54b2305af4b37298",
+        "order": 2,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "label": "Delete Row",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "red",
+        "className": "",
+        "icon": "fa-trash",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 310,
+        "y": 300,
+        "wires": [
+            [
+                "780cc43fbd2247b8",
+                "509ca48b0b9847f0"
+            ]
+        ]
+    },
+    {
+        "id": "780cc43fbd2247b8",
+        "type": "function",
+        "z": "33cde48cba9c6d03",
+        "name": "deleteRow",
+        "func": "// get selectedRow\nconst row = flow.get(\"selectedRow\")\n\n// define command\nmsg.payload = {\n    command : \"deleteRow\",\n    arguments : [row.id]\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 300,
+        "wires": [
+            [
+                "fe58fbdef0afc32d"
+            ]
+        ]
+    },
+    {
+        "id": "509ca48b0b9847f0",
+        "type": "change",
+        "z": "33cde48cba9c6d03",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"hide\":[\"Dashboard_Data\",\"Dashboard_Row\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 540,
+        "y": 340,
+        "wires": [
+            [
+                "e20e12abc467e17b"
+            ]
+        ]
+    },
+    {
+        "id": "e20e12abc467e17b",
+        "type": "link out",
+        "z": "33cde48cba9c6d03",
+        "name": "",
+        "mode": "link",
+        "links": [
+            "146621db7f77c288",
+            "8f742595fa269988"
+        ],
+        "x": 715,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "69c72fc1970a892f",
+        "type": "ui_button",
+        "z": "33cde48cba9c6d03",
+        "name": "",
+        "group": "591bf29180ec05c6",
+        "order": 2,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "label": "Filter",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "fa-filter",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 330,
+        "y": 420,
+        "wires": [
+            [
+                "b6873ff7c17f1ea4"
+            ]
+        ]
+    },
+    {
+        "id": "b6873ff7c17f1ea4",
+        "type": "change",
+        "z": "33cde48cba9c6d03",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"show\":[\"Dashboard_Filter\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 540,
+        "y": 420,
+        "wires": [
+            [
+                "91617d26d6717854"
+            ]
+        ]
+    },
+    {
+        "id": "91617d26d6717854",
+        "type": "link out",
+        "z": "33cde48cba9c6d03",
+        "name": "",
+        "mode": "link",
+        "links": [
+            "146621db7f77c288",
+            "8f742595fa269988"
+        ],
+        "x": 715,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "8f742595fa269988",
+        "type": "link in",
+        "z": "33cde48cba9c6d03",
+        "name": "",
+        "links": [
+            "10195a4843a8587a",
+            "25380da5ba05b435",
+            "6c618015f46d2b11",
+            "91617d26d6717854",
+            "e20e12abc467e17b"
+        ],
+        "x": 725,
+        "y": 200,
+        "wires": [
+            [
+                "fe58fbdef0afc32d"
+            ]
+        ]
+    },
+    {
+        "id": "84d254c431a795b4",
+        "type": "function",
+        "z": "33cde48cba9c6d03",
+        "name": "function 8",
+        "func": "msg.topic = \"SELECT * FROM tamulba7 ORDER BY FECHA DESC\";\nmsg.leer = true;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 100,
+        "wires": [
+            [
+                "83c07a47859279b7"
+            ]
+        ]
+    },
+    {
+        "id": "83c07a47859279b7",
+        "type": "mysql",
+        "z": "33cde48cba9c6d03",
+        "mydb": "854a673279d8a4a7",
+        "name": "",
+        "x": 670,
+        "y": 100,
+        "wires": [
+            [
+                "fe58fbdef0afc32d"
+            ]
+        ]
+    },
+    {
+        "id": "155dad691b4a77d6",
+        "type": "inject",
+        "z": "33cde48cba9c6d03",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 280,
+        "y": 100,
+        "wires": [
+            [
+                "84d254c431a795b4"
+            ]
+        ]
+    },
+    {
+        "id": "0d9cd6e6bdadb27d",
+        "type": "ui_button",
+        "z": "33cde48cba9c6d03",
+        "g": "8cd6043d0485ab49",
+        "name": "",
+        "group": "591bf29180ec05c6",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "label": "Actualizar",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "fa-plus-square",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 120,
+        "y": 180,
+        "wires": [
+            [
+                "84d254c431a795b4"
+            ]
+        ]
+    },
+    {
+        "id": "330703889ab0c915",
+        "type": "ui_dropdown",
+        "z": "dd75ff5aa356df2b",
+        "name": "",
+        "label": "Field",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "d61766583efd1c8e",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Customer Id",
+                "value": "ID",
+                "type": "str"
+            },
+            {
+                "label": "Device",
+                "value": "DEVICE",
+                "type": "str"
+            },
+            {
+                "label": "Temperatura",
+                "value": "TEMPERATURA",
+                "type": "str"
+            },
+            {
+                "label": "Amperaje",
+                "value": "AMPERAJE",
+                "type": "str"
+            },
+            {
+                "label": "Fecha",
+                "value": "FECHA",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 130,
+        "y": 100,
+        "wires": [
+            [
+                "e383e08e793b1fec"
+            ]
+        ]
+    },
+    {
+        "id": "52da1bea92a83ae8",
+        "type": "ui_dropdown",
+        "z": "dd75ff5aa356df2b",
+        "name": "",
+        "label": "Type",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "d61766583efd1c8e",
+        "order": 2,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "",
+                "value": "=",
+                "type": "str"
+            },
+            {
+                "label": "",
+                "value": "!=",
+                "type": "str"
+            },
+            {
+                "label": "",
+                "value": "like",
+                "type": "str"
+            },
+            {
+                "label": "",
+                "value": "<",
+                "type": "str"
+            },
+            {
+                "label": "",
+                "value": "<=",
+                "type": "str"
+            },
+            {
+                "label": "",
+                "value": ">",
+                "type": "str"
+            },
+            {
+                "label": "",
+                "value": ">=",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 130,
+        "y": 160,
+        "wires": [
+            [
+                "eb9b60eb6a08eb39"
+            ]
+        ]
+    },
+    {
+        "id": "37606d477056eb7f",
+        "type": "ui_text_input",
+        "z": "dd75ff5aa356df2b",
+        "name": "",
+        "label": "Value",
+        "tooltip": "",
+        "group": "d61766583efd1c8e",
+        "order": 3,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 130,
+        "y": 220,
+        "wires": [
+            [
+                "87b2e5735ffee849"
+            ]
+        ]
+    },
+    {
+        "id": "e383e08e793b1fec",
+        "type": "change",
+        "z": "dd75ff5aa356df2b",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "filter.field",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 350,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "eb9b60eb6a08eb39",
+        "type": "change",
+        "z": "dd75ff5aa356df2b",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "filter.type",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 350,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "87b2e5735ffee849",
+        "type": "change",
+        "z": "dd75ff5aa356df2b",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "filter.value",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 350,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3f49c9d0126ea70d",
+        "type": "ui_button",
+        "z": "dd75ff5aa356df2b",
+        "name": "",
+        "group": "d61766583efd1c8e",
+        "order": 4,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "label": "Apply Filter",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "fa-filter",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 150,
+        "y": 340,
+        "wires": [
+            [
+                "182a5eb6bfa34f5d",
+                "1437cde099055db4"
+            ]
+        ]
+    },
+    {
+        "id": "182a5eb6bfa34f5d",
+        "type": "function",
+        "z": "dd75ff5aa356df2b",
+        "name": "Construct Filter",
+        "func": "// get filter obj\nconst filter = flow.get(\"filter\");\n\n// define payload\nmsg.payload = {\n    command: \"setFilter\",\n    arguments: [\n        filter.field,\n        filter.type,\n        filter.value\n    ]\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 340,
+        "wires": [
+            [
+                "6c618015f46d2b11"
+            ]
+        ]
+    },
+    {
+        "id": "6c618015f46d2b11",
+        "type": "link out",
+        "z": "dd75ff5aa356df2b",
+        "name": "Filter Out",
+        "mode": "link",
+        "links": [
+            "146621db7f77c288",
+            "8f742595fa269988"
+        ],
+        "x": 555,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "d2ab945f653935b3",
+        "type": "ui_button",
+        "z": "dd75ff5aa356df2b",
+        "name": "",
+        "group": "d61766583efd1c8e",
+        "order": 5,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "label": "Clear Filter",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "red",
+        "className": "",
+        "icon": "fa-trash",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 150,
+        "y": 400,
+        "wires": [
+            [
+                "1a4c50aaad95bbda",
+                "1437cde099055db4"
+            ]
+        ]
+    },
+    {
+        "id": "1a4c50aaad95bbda",
+        "type": "change",
+        "z": "dd75ff5aa356df2b",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"command\":\"setFilter\",\"arguments\":[]}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 380,
+        "y": 400,
+        "wires": [
+            [
+                "6c618015f46d2b11"
+            ]
+        ]
+    },
+    {
+        "id": "1437cde099055db4",
+        "type": "change",
+        "z": "dd75ff5aa356df2b",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"hide\":[\"Dashboard_Filter\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 380,
+        "y": 460,
+        "wires": [
+            [
+                "10195a4843a8587a"
+            ]
+        ]
+    },
+    {
+        "id": "10195a4843a8587a",
+        "type": "link out",
+        "z": "dd75ff5aa356df2b",
+        "name": "",
+        "mode": "link",
+        "links": [
+            "146621db7f77c288",
+            "8f742595fa269988"
+        ],
+        "x": 555,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "146621db7f77c288",
+        "type": "link in",
+        "z": "3b0dc19f6d83de1d",
+        "name": "Control In",
+        "links": [
+            "10195a4843a8587a",
+            "25380da5ba05b435",
+            "6c618015f46d2b11",
+            "91617d26d6717854",
+            "e20e12abc467e17b"
+        ],
+        "x": 185,
+        "y": 100,
+        "wires": [
+            [
+                "a83600909d61c828"
+            ]
+        ]
+    },
+    {
+        "id": "a83600909d61c828",
+        "type": "ui_ui_control",
+        "z": "3b0dc19f6d83de1d",
+        "name": "",
+        "events": "all",
+        "x": 700,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7caf8abd34f0d96f",
+        "type": "ui_ui_control",
+        "z": "3b0dc19f6d83de1d",
+        "name": "",
+        "events": "all",
+        "x": 240,
+        "y": 180,
+        "wires": [
+            [
+                "fc629ab61d1b545b"
+            ]
+        ]
+    },
+    {
+        "id": "fc629ab61d1b545b",
+        "type": "change",
+        "z": "3b0dc19f6d83de1d",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"hide\":[\"Dashboard_Data\",\"Dashboard_Row\",\"Dashboard_Filter\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 470,
+        "y": 180,
+        "wires": [
+            [
+                "a83600909d61c828"
+            ]
+        ]
+    },
+    {
+        "id": "fcd2cfc31ab6d562",
+        "type": "mqtt in",
+        "z": "8656b58157105c21",
+        "name": "",
+        "topic": "Tamulbaout",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "c2eb93b3d56a8b8e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 170,
+        "y": 320,
+        "wires": [
+            [
+                "9ee62c5d39c681ee"
+            ]
+        ]
+    },
+    {
+        "id": "dfb5f707f7ec184f",
+        "type": "debug",
+        "z": "8656b58157105c21",
+        "name": "debug 1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "c26cc8c13a4092e5",
+        "type": "mysql",
+        "z": "8656b58157105c21",
+        "mydb": "854a673279d8a4a7",
+        "name": "",
+        "x": 530,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2209386645c44b57",
+        "type": "function",
+        "z": "8656b58157105c21",
+        "name": "function 1",
+        "func": "msg.topic = \"SELECT * FROM tamulba7 ORDER BY FECHA DESC\";\nmsg.leer = true;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 140,
+        "wires": [
+            [
+                "82bdb194b234a3d6"
+            ]
+        ]
+    },
+    {
+        "id": "82bdb194b234a3d6",
+        "type": "mysql",
+        "z": "8656b58157105c21",
+        "mydb": "854a673279d8a4a7",
+        "name": "",
+        "x": 550,
+        "y": 140,
+        "wires": [
+            [
+                "205a88325ea4701d"
+            ]
+        ]
+    },
+    {
+        "id": "205a88325ea4701d",
+        "type": "ui_table",
+        "z": "8656b58157105c21",
+        "group": "fd68cd16c4de0586",
+        "name": "",
+        "order": 5,
+        "width": 16,
+        "height": 10,
+        "columns": [],
+        "outputs": 0,
+        "cts": false,
+        "x": 750,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "9ee62c5d39c681ee",
+        "type": "json",
+        "z": "8656b58157105c21",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 350,
+        "y": 320,
+        "wires": [
+            [
+                "1db2917b896799bf",
+                "081b587b26aadb03",
+                "33ca7c591e5246ea"
+            ]
+        ]
+    },
+    {
+        "id": "1db2917b896799bf",
+        "type": "function",
+        "z": "8656b58157105c21",
+        "name": "function 2",
+        "func": "var query = \"INSERT INTO `tamulba7`(`ID`, `FECHA`, `DEVICE`, `TEMPERATURA`, `AMPERAJE`) VALUES (NULL, current_timestamp(), '\";\nquery = query+msg.payload.DEVICE + \"','\";\nquery = query+msg.payload.TEMPERATURA + \"','\";\nquery = query+msg.payload.AMPERAJE + \"');'\";\nmsg.topic=query;\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 220,
+        "wires": [
+            [
+                "c26cc8c13a4092e5"
+            ]
+        ]
+    },
+    {
+        "id": "9a529dd3ac59af4f",
+        "type": "ui_button",
+        "z": "8656b58157105c21",
+        "name": "",
+        "group": "fd68cd16c4de0586",
+        "order": 3,
+        "width": 6,
+        "height": 2,
+        "passthru": false,
+        "label": "ACTUALIZAR",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "fa-plus-square",
+        "payload": "",
+        "payloadType": "date",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 180,
+        "y": 140,
+        "wires": [
+            [
+                "2209386645c44b57"
+            ]
+        ]
+    },
+    {
+        "id": "e6d9066e69fcd39e",
+        "type": "inject",
+        "z": "8656b58157105c21",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 180,
+        "y": 420,
+        "wires": [
+            [
+                "9cf40933137bf4c7"
+            ]
+        ]
+    },
+    {
+        "id": "9cf40933137bf4c7",
+        "type": "function",
+        "z": "8656b58157105c21",
+        "name": "function 3",
+        "func": "msg.topic = \"SELECT AMPERAJE FROM tamulba7 ORDER by ID DESC LIMIT 1;\";\nmsg.leer = true;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 420,
+        "wires": [
+            [
+                "aba52c3fa6747582"
+            ]
+        ]
+    },
+    {
+        "id": "aba52c3fa6747582",
+        "type": "mysql",
+        "z": "8656b58157105c21",
+        "mydb": "854a673279d8a4a7",
+        "name": "",
+        "x": 570,
+        "y": 500,
+        "wires": [
+            [
+                "dfb5f707f7ec184f"
+            ]
+        ]
+    },
+    {
+        "id": "1d8f7570ecb6cc08",
+        "type": "ui_gauge",
+        "z": "8656b58157105c21",
+        "name": "",
+        "group": "cbf80d8130cb671f",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "donut",
+        "title": "Amperaje",
+        "label": "A",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "3",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "2.5",
+        "seg2": "2.8",
+        "diff": false,
+        "className": "",
+        "x": 740,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "081b587b26aadb03",
+        "type": "function",
+        "z": "8656b58157105c21",
+        "name": "function 4",
+        "func": "msg.payload = msg.payload.AMPERAJE;\nmsg.topic = \"AMPERAJE\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 300,
+        "wires": [
+            [
+                "1d8f7570ecb6cc08",
+                "aab60b81a2b6653d",
+                "4a113e3ec4cb0558",
+                "3fa11eb8370a7cd5"
+            ]
+        ]
+    },
+    {
+        "id": "33ca7c591e5246ea",
+        "type": "function",
+        "z": "8656b58157105c21",
+        "name": "function 5",
+        "func": "msg.payload = msg.payload.TEMPERATURA;\nmsg.topic = \"TEMPERATURA\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 360,
+        "wires": [
+            [
+                "5924f02846b48f4e",
+                "60a4305435bb045c",
+                "103502a05bff7208",
+                "65b86a40bd29d34c",
+                "b2f95792eb1ad1c1"
+            ]
+        ]
+    },
+    {
+        "id": "5924f02846b48f4e",
+        "type": "ui_gauge",
+        "z": "8656b58157105c21",
+        "name": "",
+        "group": "cbf80d8130cb671f",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "gtype": "donut",
+        "title": "TEMPERATURA",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "50",
+        "colors": [
+            "#0300b3",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "23",
+        "seg2": "28",
+        "diff": false,
+        "className": "",
+        "x": 770,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "62474b0ec3c2df2b",
+        "type": "ui_button",
+        "z": "8656b58157105c21",
+        "name": "",
+        "group": "fd68cd16c4de0586",
+        "order": 1,
+        "width": 6,
+        "height": 2,
+        "passthru": false,
+        "label": "BORRAR",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "fa-plus-square",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 180,
+        "y": 500,
+        "wires": [
+            [
+                "2e5622df0e8b11b1"
+            ]
+        ]
+    },
+    {
+        "id": "2e5622df0e8b11b1",
+        "type": "function",
+        "z": "8656b58157105c21",
+        "name": "function 6",
+        "func": "msg.topic = \"TRUNCATE TABLE tamulba7\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 520,
+        "wires": [
+            [
+                "aba52c3fa6747582"
+            ]
+        ]
+    },
+    {
+        "id": "c5b4b08b6cc466e1",
+        "type": "inject",
+        "z": "8656b58157105c21",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "604800",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 190,
+        "y": 580,
+        "wires": [
+            [
+                "2e5622df0e8b11b1"
+            ]
+        ]
+    },
+    {
+        "id": "aab60b81a2b6653d",
+        "type": "ui_chart",
+        "z": "8656b58157105c21",
+        "name": "",
+        "group": "76a4f5fc1fb1a30a",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Historico",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "3",
+        "removeOlder": "30",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#f8fc03",
+            "#eab3b3",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 740,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4e0ff7d179c7c06f",
+        "type": "hostip",
+        "z": "8656b58157105c21",
+        "name": "Host IP",
+        "x": 540,
+        "y": 600,
+        "wires": [
+            [
+                "dcf8b77270cc813a"
+            ]
+        ]
+    },
+    {
+        "id": "2147c5fbc7f54895",
+        "type": "inject",
+        "z": "8656b58157105c21",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 380,
+        "y": 620,
+        "wires": [
+            [
+                "4e0ff7d179c7c06f"
+            ]
+        ]
+    },
+    {
+        "id": "dcf8b77270cc813a",
+        "type": "function",
+        "z": "8656b58157105c21",
+        "name": "function 9",
+        "func": "msg.Ipv4 = msg.payload[1].address;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 620,
+        "wires": [
+            [
+                "bd1b0e74caaafc09"
+            ]
+        ]
+    },
+    {
+        "id": "bd1b0e74caaafc09",
+        "type": "debug",
+        "z": "8656b58157105c21",
+        "name": "debug 2",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 940,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "8efecf8048da7491",
+        "type": "telegrambot-notify",
+        "z": "8656b58157105c21",
+        "name": "",
+        "bot": "8814bcee8966f621",
+        "chatId": "5460520497",
+        "message": "Alerta! corriente alta",
+        "parseMode": "",
+        "x": 1440,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "5f20181dcd82b552",
+        "type": "function",
+        "z": "8656b58157105c21",
+        "name": "function 13",
+        "func": "var tgalert,l1;\n\nif (msg.payload == 1){\nl1= 1;\n    tgalert = { \"chadId\": 5460520497,\"type\": \"message\",\"content\": \"Alerta\"}\n msg.payload = tgalert;\n    \n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1230,
+        "y": 320,
+        "wires": [
+            [
+                "8efecf8048da7491",
+                "6cc36fe125d4ed1a",
+                "694b96e75163608d",
+                "9ef0be05498f74ff"
+            ]
+        ]
+    },
+    {
+        "id": "4a113e3ec4cb0558",
+        "type": "switch",
+        "z": "8656b58157105c21",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gte",
+                "v": "1",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1090,
+        "y": 300,
+        "wires": [
+            [
+                "5f20181dcd82b552"
+            ]
+        ]
+    },
+    {
+        "id": "6cc36fe125d4ed1a",
+        "type": "telegrambot-notify",
+        "z": "8656b58157105c21",
+        "name": "",
+        "bot": "8814bcee8966f621",
+        "chatId": "5460520497",
+        "message": "/STOP para detener el equipo.",
+        "parseMode": "",
+        "x": 1440,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "694b96e75163608d",
+        "type": "telegrambot-notify",
+        "z": "8656b58157105c21",
+        "name": "",
+        "bot": "8814bcee8966f621",
+        "chatId": "5460520497",
+        "message": "/START si desea que el torno continue en marcha",
+        "parseMode": "",
+        "x": 1440,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "60a4305435bb045c",
+        "type": "switch",
+        "z": "8656b58157105c21",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gte",
+                "v": "34",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1050,
+        "y": 380,
+        "wires": [
+            [
+                "f4f870b2091db21f"
+            ]
+        ]
+    },
+    {
+        "id": "f4f870b2091db21f",
+        "type": "function",
+        "z": "8656b58157105c21",
+        "name": "function 14",
+        "func": "var tgalert,l1;\n\nif (msg.payload == 1){\nl1= 1;\n    tgalert = { \"chadId\": 5460520497,\"type\": \"message\",\"content\": \"Alerta\"}\n msg.payload = tgalert;\n    \n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1190,
+        "y": 420,
+        "wires": [
+            [
+                "6b3cae4f46dc5127",
+                "75f866c7a0b90b32",
+                "af037f96633c1033",
+                "0a141d77711a111c"
+            ]
+        ]
+    },
+    {
+        "id": "6b3cae4f46dc5127",
+        "type": "telegrambot-notify",
+        "z": "8656b58157105c21",
+        "name": "",
+        "bot": "8814bcee8966f621",
+        "chatId": "5460520497",
+        "message": "Alerta exceso de temperatura en torno!!",
+        "parseMode": "",
+        "x": 1420,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "75f866c7a0b90b32",
+        "type": "telegrambot-notify",
+        "z": "8656b58157105c21",
+        "name": "",
+        "bot": "8814bcee8966f621",
+        "chatId": "5460520497",
+        "message": "/STOP para detener el equipo.",
+        "parseMode": "",
+        "x": 1420,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "103502a05bff7208",
+        "type": "debug",
+        "z": "8656b58157105c21",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "3fa11eb8370a7cd5",
+        "type": "debug",
+        "z": "8656b58157105c21",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "af037f96633c1033",
+        "type": "telegrambot-notify",
+        "z": "8656b58157105c21",
+        "name": "",
+        "bot": "8814bcee8966f621",
+        "chatId": "5460520497",
+        "message": "/START si desea que el torno continue en marcha",
+        "parseMode": "",
+        "x": 1420,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "9f36cfd6a26ea69e",
+        "type": "telegrambot-command",
+        "z": "8656b58157105c21",
+        "name": "",
+        "bot": "8814bcee8966f621",
+        "command": "/DatosAmperaje",
+        "commandType": "str",
+        "commandCase": false,
+        "x": 890,
+        "y": 700,
+        "wires": [
+            [
+                "65b86a40bd29d34c"
+            ]
+        ]
+    },
+    {
+        "id": "9ef0be05498f74ff",
+        "type": "telegrambot-notify",
+        "z": "8656b58157105c21",
+        "name": "",
+        "bot": "8814bcee8966f621",
+        "chatId": "5460520497",
+        "message": "/DatosAmperaje  visualiza datos de corriente",
+        "parseMode": "",
+        "x": 1440,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "0a141d77711a111c",
+        "type": "telegrambot-notify",
+        "z": "8656b58157105c21",
+        "name": "",
+        "bot": "8814bcee8966f621",
+        "chatId": "5460520497",
+        "message": "/DatosTemperatura  visualiza datos de temperatura",
+        "parseMode": "",
+        "x": 1420,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "65b86a40bd29d34c",
+        "type": "function",
+        "z": "8656b58157105c21",
+        "name": "function 16",
+        "func": "msg.payload = {}\nmsg.payload.chatId = 5460520497;\nmsg.payload.type = \"message\";\nmsg.payload.content = msg.payload;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1090,
+        "y": 700,
+        "wires": [
+            [
+                "87a2ab4ede7982a3"
+            ]
+        ]
+    },
+    {
+        "id": "87a2ab4ede7982a3",
+        "type": "telegram sender",
+        "z": "8656b58157105c21",
+        "name": "",
+        "bot": "82a86f9ed942f2b5",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 1290,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b2f95792eb1ad1c1",
+        "type": "ui_chart",
+        "z": "8656b58157105c21",
+        "name": "",
+        "group": "76a4f5fc1fb1a30a",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Historico",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "40",
+        "removeOlder": "30",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#eab3b3",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 740,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    }
+]
