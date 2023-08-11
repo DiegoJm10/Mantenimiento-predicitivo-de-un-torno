@@ -13,7 +13,7 @@ En este proyecto se busca solucionar que se pueda prevenir alguna falla del moto
 - [Node-red](https://nodered.org/docs/getting-started/windows)
 
 ### Hardware
-- [Esp32](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf)
+- [Esp32](http://esp32.net/)
 
 ![](https://github.com/DiegoJm10/Mantenimiento-predicitivo-de-un-torno/blob/main/EVIDENCIA%20DE%20IMAGENES/esp32.jpg?raw=true)
 
