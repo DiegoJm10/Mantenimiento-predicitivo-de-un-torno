@@ -368,9 +368,15 @@ Tabla de datos completa.
 ## Evidencia
 - [Youtube]()
 
-- [Códigos de Arduino]()
+- [Códigos de Arduino](https://github.com/DiegoJm10/Mantenimiento-predicitivo-de-un-torno/blob/main/Codigos%20arduino%20y%20node-red/Prueba_todo_junto05.06.ino)
 
-- [Códigos de Node-red]()
+- [Códigos de Node-red](https://github.com/DiegoJm10/Mantenimiento-predicitivo-de-un-torno/blob/main/Codigos%20arduino%20y%20node-red/flows%20(3).json)
+
+- [Ejemplo de Datos recopilados](https://github.com/DiegoJm10/Mantenimiento-predicitivo-de-un-torno/blob/main/DOCUMENTOS/EJEMPLO%20DE%20DATOS%20RECOPILADOS.csv)
+
+- [Pagina Web en Codigo IoT]()
+
+- [Formato Plan de acción](https://github.com/DiegoJm10/Mantenimiento-predicitivo-de-un-torno/blob/main/DOCUMENTOS/Plan%20de%20Acci%C3%B3n%20-%20Mantenimiento%20predictivo%20de%20un%20torno%20.docx)
 ## Créditos
 
 ### Desarrollado por
