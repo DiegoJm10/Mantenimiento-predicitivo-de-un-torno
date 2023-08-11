@@ -355,6 +355,13 @@ double Irms = emon1.calcIrms(1480);
 
 ![](https://github.com/DiegoJm10/Mantenimiento-predicitivo-de-un-torno/blob/main/EVIDENCIA%20DE%20IMAGENES/Datos%20de%20tabla.png?raw=true)
 
+En la parte de electronica tuvimos que hacer unos arreglos de resistencias y capacitores para poder leer el sensor sct013.
+
+![](https://github.com/DiegoJm10/Mantenimiento-predicitivo-de-un-torno/blob/main/EVIDENCIA%20DE%20IMAGENES/RESISTENCIAS.png?raw=true)
+
+También mostramos como conectar los sensores a la esp32
+
+![](https://github.com/DiegoJm10/Mantenimiento-predicitivo-de-un-torno/blob/main/EVIDENCIA%20DE%20IMAGENES/Circuito.png?raw=true)
 ## Resultados
 ![](https://github.com/DiegoJm10/Mantenimiento-predicitivo-de-un-torno/blob/main/EVIDENCIA%20DE%20IMAGENES/Dashboard1.png?raw=true)
 Gráficas con indicador
