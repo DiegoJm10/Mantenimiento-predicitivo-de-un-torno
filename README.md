@@ -15,15 +15,15 @@ En este proyecto se busca solucionar que se pueda prevenir alguna falla del moto
 ### Hardware
 - [Esp32](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf)
 
-![](https://github.com/DiegoJm10/Mantenimiento-predicitivo-de-un-torno/blob/main/AR0453-ESP32-V2.jpg?raw=true)
+![](https://github.com/DiegoJm10/Mantenimiento-predicitivo-de-un-torno/blob/main/EVIDENCIA%20DE%20IMAGENES/esp32.jpg?raw=true)
 
 - [Sensor sct 013](https://pdf1.alldatasheet.com/datasheet-pdf/view/1159366/YHDC/SCT013.html)
 
-![](https://github.com/DiegoJm10/Mantenimiento-predicitivo-de-un-torno/blob/main/sensor-de-corriente-ac-30a.jpg?raw=true)
+![](https://github.com/DiegoJm10/Mantenimiento-predicitivo-de-un-torno/blob/main/EVIDENCIA%20DE%20IMAGENES/sensor-de-corriente-ac-30a.jpg?raw=true)
 
 - [Sensor termopar tipo K + Modulo Max6675](https://pdf1.alldatasheet.com/datasheet-pdf/view/73692/MAXIM/MAX6675.html)
 
-![](https://github.com/DiegoJm10/Mantenimiento-predicitivo-de-un-torno/blob/main/61n5RQZDeoL._AC_UF1000,1000_QL80_.jpg?raw=true)
+![](https://github.com/DiegoJm10/Mantenimiento-predicitivo-de-un-torno/blob/main/EVIDENCIA%20DE%20IMAGENES/Sensor%20termopar.jpg?raw=true)
 
 ## Desarrollo
  1. Se instalaron los drivers para esp32 en Arduino IDE.
@@ -37,7 +37,7 @@ En este proyecto se busca solucionar que se pueda prevenir alguna falla del moto
       - Abrimos pestaña de Herramientas.
       - Seleccionamos Placa y ahi mismo gestor de tarjetas.
       - Buscamos esp32 y seleccionamos lo que muestra en la imagen
-      ![](https://github.com/DiegoJm10/Mantenimiento-predicitivo-de-un-torno/blob/main/Pruebas_SENSOR_DE_TEMOPAR%20Arduino%201.8.19%2010_08_2023%2010_49_33%20a.%20m..png?raw=true)
+      ![](https://github.com/DiegoJm10/Mantenimiento-predicitivo-de-un-torno/blob/main/EVIDENCIA%20DE%20IMAGENES/libreria%20arduino.png?raw=true)
 
  2. Se seleccionó la tarjeta adecuada la cual se llama **ESP32 Dev Module**.
 
@@ -244,13 +244,13 @@ double Irms = emon1.calcIrms(1480);
 ```
 7. Mostramos la conexión de Node-red.
 
-![](https://github.com/DiegoJm10/Mantenimiento-predicitivo-de-un-torno/blob/main/Node-RED%20-%20Google%20Chrome%2010_08_2023%2011_26_30%20a.%20m..png?raw=true)
+![](https://github.com/DiegoJm10/Mantenimiento-predicitivo-de-un-torno/blob/main/EVIDENCIA%20DE%20IMAGENES/node-red%20con%20telegram.png?raw=true)
 
-![](https://github.com/DiegoJm10/Mantenimiento-predicitivo-de-un-torno/blob/main/Dashboard.png?raw=true)
+![](https://github.com/DiegoJm10/Mantenimiento-predicitivo-de-un-torno/blob/main/EVIDENCIA%20DE%20IMAGENES/Dashboard.png?raw=true)
 
-![](https://github.com/DiegoJm10/Mantenimiento-predicitivo-de-un-torno/blob/main/Filtrer.png?raw=true)
+![](https://github.com/DiegoJm10/Mantenimiento-predicitivo-de-un-torno/blob/main/EVIDENCIA%20DE%20IMAGENES/Filtrer.png?raw=true)
 
-![](https://github.com/DiegoJm10/Mantenimiento-predicitivo-de-un-torno/blob/main/UI%20CONTROL.png?raw=true)
+![](https://github.com/DiegoJm10/Mantenimiento-predicitivo-de-un-torno/blob/main/EVIDENCIA%20DE%20IMAGENES/UI%20CONTROL.png?raw=true)
 
 8. En la siguiente lista se mostrara los códigos de cada fuction:
    - Fuction 1: 
@@ -349,15 +349,28 @@ double Irms = emon1.calcIrms(1480);
 
 9. Los datos obtenidos se mandaron a una base de datos de mysql en la plataforma **phpmyadmin** como se muestra en la siguiente imagen.
 
-![](https://github.com/DiegoJm10/Mantenimiento-predicitivo-de-un-torno/blob/main/localhost%20_%20127.0.0.1%20_%20tamulbatm7%20_%20tamulba7%20_%20phpMyAdmin%205.2.1%20-%20Google%20Chrome%2010_08_2023%2012_54_37%20p.%20m..png?raw=true)
+![](https://github.com/DiegoJm10/Mantenimiento-predicitivo-de-un-torno/blob/main/EVIDENCIA%20DE%20IMAGENES/phpmyadmin.png?raw=true)
+
+10. Para configurar esta base datos se va hacer de la siguiente manera:
+
+![](https://github.com/DiegoJm10/Mantenimiento-predicitivo-de-un-torno/blob/main/EVIDENCIA%20DE%20IMAGENES/Datos%20de%20tabla.png?raw=true)
 
 ## Resultados
+![](https://github.com/DiegoJm10/Mantenimiento-predicitivo-de-un-torno/blob/main/EVIDENCIA%20DE%20IMAGENES/Dashboard1.png?raw=true)
+Gráficas con indicador
 
+![](https://github.com/DiegoJm10/Mantenimiento-predicitivo-de-un-torno/blob/main/EVIDENCIA%20DE%20IMAGENES/Dashboard2.png?raw=true)
+![](https://github.com/DiegoJm10/Mantenimiento-predicitivo-de-un-torno/blob/main/EVIDENCIA%20DE%20IMAGENES/Dashboard3.png?raw=true)
+Tabla de datos con filtro.
+
+![](https://github.com/DiegoJm10/Mantenimiento-predicitivo-de-un-torno/blob/main/EVIDENCIA%20DE%20IMAGENES/Dashboard4.png?raw=true)
+Tabla de datos completa.
 ## Evidencia
 - [Youtube]()
 
-- [Codigos de arduino]()
+- [Códigos de Arduino]()
 
+- [Códigos de Node-red]()
 ## Créditos
 
 ### Desarrollado por
