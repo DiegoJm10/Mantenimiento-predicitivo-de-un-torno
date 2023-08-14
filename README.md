@@ -373,7 +373,7 @@ Tabla de datos con filtro.
 ![](https://github.com/DiegoJm10/Mantenimiento-predicitivo-de-un-torno/blob/main/EVIDENCIA%20DE%20IMAGENES/Dashboard4.png?raw=true)
 Tabla de datos completa.
 ## Evidencia
-- [Youtube]()
+- [Youtube](https://youtu.be/oZgP4gCtuEk)
 
 - [Códigos de Arduino](https://github.com/DiegoJm10/Mantenimiento-predicitivo-de-un-torno/blob/main/Codigos%20arduino%20y%20node-red/Prueba_todo_junto05.06.ino)
 
