@@ -80,6 +80,7 @@ void callback(char* topic, byte* payload, unsigned int length) {
 
 }
 
+//con la siguiente función  podemos ver mediante el monitor seria si la conexión con mqtt fue exitosa
 void reconnect() {
   while (!client.connected()) {
     Serial.print("Attempting MQTT connection...");
