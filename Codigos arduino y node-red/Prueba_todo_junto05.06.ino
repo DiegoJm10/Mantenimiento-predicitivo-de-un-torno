@@ -1,3 +1,4 @@
+// Librerias que se deben incluir en el progra,a
 #include <ArduinoJson.h>
 #include <WiFi.h>
 #include <PubSubClient.h>
@@ -7,6 +8,8 @@
 #include <Adafruit_PCD8544.h>
 #include "EmonLib.h"
 #include <SPI.h>
+
+//Se declaran las variables globales tipo entera y los pines que se van a utilizar para conectar los sensores
 int CSK=13;
 int CS=12;
 int SO=14;
@@ -15,7 +18,7 @@ EnergyMonitor emon1;
 int rede = 127;
 int pino_sct = 34;
 
-
+//Este apartado se usa para realizar la conexioon de la tarjeta con una red WI-FI
 const char* ssid = "Eventos_FCQeI";
 const char* password = "2023FCQEI";
 const char* mqtt_server = "52.28.62.138";
@@ -32,7 +35,7 @@ int value = 0;
 void setup_wifi() {
 
   delay(10);
-  // We start by connecting to a WiFi network
+  // En este bloque podremos ver en monitor serial si la tarjeta logro conectarse a una red WI-FI
   Serial.println();
   Serial.print("Connecting to ");
   Serial.println(ssid);
