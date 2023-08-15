@@ -21,6 +21,8 @@ int pino_sct = 34;
 //Este apartado se usa para realizar la conexioon de la tarjeta con una red WI-FI
 const char* ssid = "Eventos_FCQeI";
 const char* password = "2023FCQEI";
+
+//  El siguiente bloque realiza la configuración con el servidor mqtt
 const char* mqtt_server = "52.28.62.138";
 String username_mqtt="DiegoJm";
 String password_mqtt="12345678";
@@ -50,11 +52,13 @@ void setup_wifi() {
 
   randomSeed(micros());
 
+  //poro medio del puerto serial podemos visualizar si la conexion con una red WI-FI fue exitosa
   Serial.println("");
   Serial.println("WiFi connected");
   Serial.println("IP address: ");
   Serial.println(WiFi.localIP());
 }
+
 
 void callback(char* topic, byte* payload, unsigned int length) {
   Serial.print("Message arrived [");
