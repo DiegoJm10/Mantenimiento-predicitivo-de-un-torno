@@ -110,7 +110,7 @@ void setup() {
 }
 
 void loop() {
-
+// Se obtiene el dato del sensor de temperatura para leerlo en celcius.
 int temperatura;
  temperatura=termopar.readCelsius();
 delay(1000);
@@ -124,7 +124,7 @@ double Irms = emon1.calcIrms(1480);
   if (now - lastMsg > 1000) {
     lastMsg = now;
   
-
+// Se realiza un documento json el cual se manda a node-red
     StaticJsonDocument<128> doc;
 
     doc["DEVICE"] = "ESP32";
@@ -133,7 +133,7 @@ double Irms = emon1.calcIrms(1480);
     doc["TEMPERATURA"] = temperatura;
     doc["AMPERAJE"] = (Irms-0.30);
    
-
+// Muestra los datos en el Serial.
     String output;
     
     serializeJson(doc, output);
