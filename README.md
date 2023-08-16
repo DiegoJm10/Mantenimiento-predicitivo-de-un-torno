@@ -109,10 +109,18 @@ void loop()
 6. Se juntaron todos los codigos con el codigo de conexion a internet 
 
 ```
+// Librerias que se deben incluir en el progra,a
+#include <ArduinoJson.h>
+#include <WiFi.h>
+#include <PubSubClient.h>
+#define BUILTIN_LED 2
+#include<max6675.h>
 #include <Adafruit_GFX.h>
 #include <Adafruit_PCD8544.h>
 #include "EmonLib.h"
 #include <SPI.h>
+
+//Se declaran las variables globales tipo entera y los pines que se van a utilizar para conectar los sensores
 int CSK=13;
 int CS=12;
 int SO=14;
@@ -121,10 +129,12 @@ EnergyMonitor emon1;
 int rede = 127;
 int pino_sct = 34;
 
+//Este apartado se usa para realizar la conexioon de la tarjeta con una red WI-FI
+const char* ssid = "Eventos_FCQeI";
+const char* password = "2023FCQEI";
 
-const char* ssid = "Totalplay-B4A4";
-const char* password = "B4A45BF2bs5x8Mb4";
-const char* mqtt_server = "3.64.154.127";
+//  El siguiente bloque realiza la configuración con el servidor mqtt
+const char* mqtt_server = "52.28.62.138";
 String username_mqtt="DiegoJm";
 String password_mqtt="12345678";
 
@@ -138,7 +148,7 @@ int value = 0;
 void setup_wifi() {
 
   delay(10);
-  // We start by connecting to a WiFi network
+  // En este bloque podremos ver en monitor serial si la tarjeta logro conectarse a una red WI-FI
   Serial.println();
   Serial.print("Connecting to ");
   Serial.println(ssid);
@@ -153,11 +163,13 @@ void setup_wifi() {
 
   randomSeed(micros());
 
+  //poro medio del puerto serial podemos visualizar si la conexion con una red WI-FI fue exitosa
   Serial.println("");
   Serial.println("WiFi connected");
   Serial.println("IP address: ");
   Serial.println(WiFi.localIP());
 }
+
 
 void callback(char* topic, byte* payload, unsigned int length) {
   Serial.print("Message arrived [");
@@ -179,6 +191,7 @@ void callback(char* topic, byte* payload, unsigned int length) {
 
 }
 
+//con la siguiente función  podemos ver mediante el monitor seria si la conexión con mqtt fue exitosa
 void reconnect() {
   while (!client.connected()) {
     Serial.print("Attempting MQTT connection...");
@@ -208,7 +221,7 @@ void setup() {
 }
 
 void loop() {
-
+// Se obtiene el dato del sensor de temperatura para leerlo en celcius.
 int temperatura;
  temperatura=termopar.readCelsius();
 delay(1000);
@@ -222,7 +235,7 @@ double Irms = emon1.calcIrms(1480);
   if (now - lastMsg > 1000) {
     lastMsg = now;
   
-
+// Se realiza un documento json el cual se manda a node-red
     StaticJsonDocument<128> doc;
 
     doc["DEVICE"] = "ESP32";
@@ -231,7 +244,7 @@ double Irms = emon1.calcIrms(1480);
     doc["TEMPERATURA"] = temperatura;
     doc["AMPERAJE"] = (Irms-0.30);
    
-
+// Muestra los datos en el Serial.
     String output;
     
     serializeJson(doc, output);
@@ -241,7 +254,9 @@ double Irms = emon1.calcIrms(1480);
     client.publish("Tamulbaout", output.c_str());
   }
 }
+
 ```
+
 7. Mostramos la conexión de Node-red.
 
 ![](https://github.com/DiegoJm10/Mantenimiento-predicitivo-de-un-torno/blob/main/EVIDENCIA%20DE%20IMAGENES/node-red%20con%20telegram.png?raw=true)
