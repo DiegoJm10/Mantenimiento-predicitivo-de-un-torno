@@ -362,7 +362,7 @@ double Irms = emon1.calcIrms(1480);
         return msg;
 
    
-Una vez configurado el flow en Node red para la obtienencion de los datos,  anexamos los nodos telegram para implementar un sistema de notificaciones que se detonen cuando supere el limite establecido de amperaje y corriente de peracion adecuada para el motor en este caso espeficico,utilizando un bot de telegram para este apartado del sistema, como se muestra a continuacion en el flow correspondiente:
+9. Una vez configurado el flow en Node red para la obtienencion de los datos,  anexamos los nodos telegram para implementar un sistema de notificaciones que se detonen cuando supere el limite establecido de amperaje y corriente de peracion adecuada para el motor en este caso espeficico,utilizando un bot de telegram para este apartado del sistema, como se muestra a continuacion en el flow correspondiente:
 
 ![](https://github.com/Yurikolugo/flow1_NodeRed/blob/main/WhatsApp%20Image%202023-08-15%20at%2012.09.33%20AM.jpeg?raw=true)
 
@@ -370,8 +370,9 @@ Una vez configurado el flow en Node red para la obtienencion de los datos,  anex
 El nodo switch nos manda un 1 cuando el valor del msg.payload es igual o mayor a 1 para el caso del amperaje, para el caso de la  temperatura se dejo en = o mayor a 34 °C:
 ![](https://github.com/Yurikolugo/flow1_NodeRed/blob/main/WhatsApp%20Image%202023-08-15%20at%2012.12.35%20AM.jpg?raw=true)
 
-posteriorment se creo una funcion donde si es 1 manda el mensaje al chat con el bot de telegram 
+10. Posteriorment se creo una funcion donde si es 1 manda el mensaje al chat con el bot de telegram 
 a continuación la funcion:
+ ```
 var tgalert,l1;
 
 if (msg.payload == 1){
@@ -382,18 +383,19 @@ if (msg.payload == 1){
 }
 
 return msg;
+ ```
 
 Finalmente se configura los nodos notificacion telegram del siguiente manera :
 
  ![](https://github.com/Yurikolugo/flow1_NodeRed/blob/main/WhatsApp%20Image%202023-08-15%20at%2012.20.54%20AM.jpeg?raw=true)
 
-   ```
+  
 
-9. Los datos obtenidos se mandaron a una base de datos de mysql en la plataforma **phpmyadmin** como se muestra en la siguiente imagen.
+11. Los datos obtenidos se mandaron a una base de datos de mysql en la plataforma **phpmyadmin** como se muestra en la siguiente imagen.
 
 ![](https://github.com/DiegoJm10/Mantenimiento-predicitivo-de-un-torno/blob/main/EVIDENCIA%20DE%20IMAGENES/phpmyadmin.png?raw=true)
 
-10. Para configurar esta base datos se va hacer de la siguiente manera:
+12. Para configurar esta base datos se va hacer de la siguiente manera:
 
 ![](https://github.com/DiegoJm10/Mantenimiento-predicitivo-de-un-torno/blob/main/EVIDENCIA%20DE%20IMAGENES/Datos%20de%20tabla.png?raw=true)
 
