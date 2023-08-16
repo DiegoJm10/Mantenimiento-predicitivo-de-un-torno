@@ -372,6 +372,7 @@ El nodo switch nos manda un 1 cuando el valor del msg.payload es igual o mayor a
 
 10. Posteriorment se creo una funcion donde si es 1 manda el mensaje al chat con el bot de telegram 
 a continuación la funcion:
+
  ```
 var tgalert,l1;
 
@@ -383,6 +384,7 @@ if (msg.payload == 1){
 }
 
 return msg;
+
  ```
 
 Finalmente se configura los nodos notificacion telegram del siguiente manera :
